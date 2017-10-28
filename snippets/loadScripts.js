@@ -4,7 +4,7 @@ Purpose: To Load Multiple JS Files with a single function
 */
 
 function loadScripts(){
-	var directory = 'js/';
+	var directory = 'snippets/';
 	var extension = '.js';
 	$.get("requirements.txt", function(data){
 		var files = data.split(",");
@@ -24,7 +24,7 @@ Instructions
 ------------
 
 Step 1: Create a 'requirements.txt' file in the root of your web directory (this is where your index.html file is located)
-Step 2: Create / Add to your js/ directory all .js files used in your project
+Step 2: Create / Add to your snippets/ directory all .js files used in your project
 Step 3: When creating js files, ensure you have a main() function or this code won't work
 
       function helloWorld(){
